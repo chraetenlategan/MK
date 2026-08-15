@@ -19,15 +19,16 @@ position: relative;
 #nav-bar-items{
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    gap: 80px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: clamp(10px,2vh,40px);
     float: right;
     align-items: center;
 
 }
 
 .nav-bar-attributes a{
-font-size: 30px;
+font-size: clamp(16px, 2vw, 24px);
 text-decoration: none;
 color: white;
 }
