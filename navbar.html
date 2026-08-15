@@ -1,81 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar</title>
-</head>
-<style>
+  </head>
+  <style>
+    .nav-bar {
+      background-image: url(images/navbar.jpeg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0;
+      position: relative;
+    }
 
-.nav-bar{
-background-image: url(images/navbar.jpeg);
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 20px 0;
-position: relative;
-}
+    #nav-bar-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: clamp(10px, 2vh, 40px);
+      align-items: center;
+    }
 
-#nav-bar-items{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: clamp(10px,2vh,40px);
-    float: right;
-    align-items: center;
+    .nav-bar-attributes a {
+      font-size: clamp(16px, 2vw, 24px);
+      text-decoration: none;
+      color: white;
 
-}
 
-.nav-bar-attributes a{
-font-size: clamp(16px, 2vw, 24px);
-text-decoration: none;
-color: white;
-}
+    }
 
-.logo{
-    position: absolute;
-    left: 40px;
-    height: clamp(40px, 8vw, 100px);
-    width: clamp(40px, 8vw, 100px);
-    border-radius: 50%;
-    object-fit: cover;
+    .logo {
+      position: absolute;
+      left: 40px;
+      height: clamp(40px, 8vw, 100px);
+      width: clamp(40px, 8vw, 100px);
+      border-radius: 50%;
+      object-fit: cover;
+    }
 
-}
+    @media (max-width: 600px) {
+      .logo {
+        position: absolute;
+        left: 5px;
+        height: clamp(30px, 8vw, 80px);
+        width: clamp(30px, 8vw, 80px);
+        border-radius: 50%;
+        object-fit: cover;
+      }
 
-.nav-bar-attributes a:hover {
-    color: rgb(185, 159, 11);
-    text-decoration: underline;
-}
-</style>
-<body style="margin: 0px;">
+      .nav-bar-attributes {
+        font-size: clamp(14px, 3vw, 20px);
+      }
+    }
+
+    .nav-bar-attributes a:hover {
+      color: rgb(185, 159, 11);
+      text-decoration: underline;
+    }
+  </style>
+  <body style="margin: 0px">
     <nav class="nav-bar">
-        <img src="images/logo.jpg" class="logo" href="index.html">
-        
+      <img src="images/logo.jpg" class="logo" />
 
-        <ul id="nav-bar-items" style="list-style: none;">
-            <li>
-                <span class="nav-bar-attributes">
-                    <a href="about.html">About</a>
-                </span>
-            </li>
-            <li>
-                <span class="nav-bar-attributes">
-                    <a href="contact.html">Contact us</a>
-                </span>
-            </li>
-            <li>
-                <span class="nav-bar-attributes">
-                    <a href="team.html">Our Team</a>
-                </span>
-            </li>
-            <li>
-                <span class="nav-bar-attributes">
-                    <a href="services.html">Services</a>
-                </span>
-            </li>
-        </ul>
+      <ul id="nav-bar-items" style="list-style: none">
         
+        <li class="nav-bar-attributes"><a href="index.html">Home</a></li>
+        <li class="nav-bar-attributes"><a href="about.html">About</a></li>
+        <li class="nav-bar-attributes">
+          <a href="contact.html">Contact us</a>
+        </li>
+        <li class="nav-bar-attributes"><a href="team.html">Our Team</a></li>
+        <li class="nav-bar-attributes"><a href="services.html">Services</a></li>
+      </ul>
     </nav>
-</body>
+  </body>
 </html>
