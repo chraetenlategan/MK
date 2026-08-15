@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+</head>
+<style>
+
+.nav-bar{
+background-image: url(images/navbar.jpeg);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px 0;
+position: relative;
+}
+
+#nav-bar-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 80px;
+    float: right;
+    align-items: center;
+
+}
+
+.nav-bar-attributes a{
+font-size: 30px;
+text-decoration: none;
+color: white;
+}
+
+.logo{
+    position: absolute;
+    left: 40px;
+    height: 100px;
+
+}
+
+.nav-bar-attributes a:hover {
+    color: rgb(185, 159, 11);
+    text-decoration: underline;
+}
+</style>
+<body style="margin: 0px;">
+    <nav class="nav-bar">
+        <img src="images/logo.jpg" class="logo">
+        
+
+        <ul id="nav-bar-items" style="list-style: none;">
+            <li>
+                <span class="nav-bar-attributes">
+                    <a href="index.html">Home</a>
+                </span>
+            </li>
+            <li>
+                <span class="nav-bar-attributes">
+                    <a href="about.html">About</a>
+                </span>
+            </li>
+            <li>
+                <span class="nav-bar-attributes">
+                    <a href="contact.html">Contact us</a>
+                </span>
+            </li>
+            <li>
+                <span class="nav-bar-attributes">
+                    <a href="team.html">Our Team</a>
+                </span>
+            </li>
+            <li>
+                <span class="nav-bar-attributes">
+                    <a href="services.html">Services</a>
+                </span>
+            </li>
+        </ul>
+        
+    </nav>
+</body>
+</html>
