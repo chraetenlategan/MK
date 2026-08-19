@@ -15,3 +15,5 @@ Html tags:
 Javascript:
 I used javascirpt to fetch the footer so that I do not have to repeat it on each page.
 
+
+
