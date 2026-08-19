@@ -1,0 +1,17 @@
+Html tags:
+<nav>
+<footer>
+<p>
+<br>
+<div>
+<img>
+<h1>
+<li>
+<form>
+<lable>
+<ul>
+<title>
+
+Javascript:
+I used javascirpt to fetch the footer so that I do not have to repeat it on each page.
+
